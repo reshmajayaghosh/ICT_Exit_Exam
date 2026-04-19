@@ -13,7 +13,7 @@ df = df.dropna(subset=['location', 'size'])
 df['bhk'] = df['size'].str.split(" ").str[0].astype(int)
 
 
-st.title("🏠 Bangalore House Price Prediction")
+st.title(" Bangalore House Price Prediction")
 
 
 location = st.selectbox("Select Location", df['location'].unique())
